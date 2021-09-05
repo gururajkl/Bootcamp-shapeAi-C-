@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    
+    int s, m, ns, i, j;
+    
+    cout << "Enter m value\n";
+    cin >> m;
+    
+    for (i = 0; i < m; i++) {
+        for (s = 0; s < (m - i); s++) {
+            cout << " ";
+        }
+        for (ns = 0; ns < ((2*i)-1); ns++) {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    
+    return 0;
+}

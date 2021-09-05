@@ -1,0 +1,34 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    
+    int n, flag = 1;
+    
+    cout << "Enter the number\n";
+    cin >> n;
+    
+    for (int i = 2; i < sqrt(n); i++) {
+        if (n % i == 0) {
+            flag = 0;
+            break;
+        }
+    }
+    
+    if (n <= 0) {
+        flag = 0;
+    }
+    
+    if (flag == 1) {
+        cout << n << " is prime numbers" << endl;
+    }
+    
+    if (flag == 0) {
+        cout << n << " is Not a prime number" << endl;
+    }
+    
+    return 0;
+}
